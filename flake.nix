@@ -23,11 +23,11 @@
 
     # Tree-sitter grammars Emacs uses.
     tree-sitter-capnp = { url = "github:tree-sitter-grammars/tree-sitter-capnp"; flake = false; };
-    tree-sitter-cozo  = { url = "github:Criome/tree-sitter-cozo"; inputs.nixpkgs.follows = "nixpkgs"; };
+    tree-sitter-cozo  = { url = "github:LiGoldragon/tree-sitter-cozo"; inputs.nixpkgs.follows = "nixpkgs"; };
 
     # vscode-aski source (used for aski-mode elisp derivation).
     vscode-aski = { url = "github:LiGoldragon/vscode-aski"; flake = false; };
-    aski        = { url = "github:Criome/aski"; inputs.nixpkgs.follows = "nixpkgs"; };
+    aski        = { url = "github:LiGoldragon/aski-core"; inputs.nixpkgs.follows = "nixpkgs"; };
   };
 
   outputs = inputs: inputs.blueprint { inherit inputs; };
