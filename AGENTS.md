@@ -1,23 +1,11 @@
-# Agent Bootstrap — CriomOS-emacs
+# Agent instructions — CriomOS-emacs
 
-## First thing
+You **MUST** read AGENTS.md at `github:ligoldragon/lore` — the workspace contract.
 
-Run `bd list --status open` to see what's already on the table.
+You **MUST** read CriomOS's AGENTS.md (sibling repo) — CriomOS-cluster rules apply here.
 
-## Scope
+## Repo role
 
-Emacs distribution for the CriomOS home profile. Packages the mkEmacs
-build + all elisp sources + tree-sitter grammars as a self-contained
-blueprint flake. Consumed by `CriomOS-home` and (optionally) standalone
-via `home-manager switch --flake github:LiGoldragon/CriomOS-emacs#…`.
+Emacs distribution for the CriomOS home profile. Packages the mkEmacs build + elisp sources + tree-sitter grammars as a self-contained blueprint flake. Consumed by `CriomOS-home` and standalone via `home-manager switch --flake github:LiGoldragon/CriomOS-emacs#…`.
 
-## Rust style
-
-N/A — this is a Nix + elisp repo.
-
-## Hard process rules
-
-- Jujutsu only. Never `git` CLI.
-- Push immediately after every change.
-- Mentci three-tuple commit format:
-  `(("CommitType", "scope"), ("Action", "what"), ("Verdict", "why"))`.
+First thing: run `bd list --status open`.
